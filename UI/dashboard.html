@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<div id="dash_header">
+	<center>
+		<form action="" method="post">
+			<input type="text" name="search" id="search" placeholder="search parcel">
+		</form>
+	</center>
+</div>
+
+
+<div id="menu">
+	<ul>
+		<li><a  class="active" href="">Home</a></li>
+		<li><a  href="addparcel.html">Add parcel</a></li>
+		<li><a  href="intransit.html">In transit parcel</a></li>
+		<li><a  href="allparcels.html"> All parcel delivery order</a></li>
+		<li><a  href="">Notification</a></li>
+		<li><a  href="">Profile</a></li>
+	</ul>
+</div>
+
+
+<div id="dash_body">
+	<table width="100%"><tr><td>
+		<div id="transitP"><br><font id="textreport"><b> In transit: 0</b></font></div></td>
+	 <td><div id="pdelivered"><br><font id="textreport"><b> Delivered parcel: 0</b></font></div></td>
+	<td><div id="totalP"><br><font id="textreport"><b> Total parcel: 0</b></font></div></td> 
+</tr>
+</table>
+<div id="recentparceldiv">
+<center><font id="recenttitle">Recent Parcels</font>
+<table id="recentlistparcel">
+	<tr><th>No Parcel</th><th>Title</th><th>Pickup location</th><th>Destination</th><th>Price</th><th>Status</th></tr>
+	<tr><td>example</td><td>example</td><td>example</td><td>example</td><td>example</td><td>example</td></tr>
+	<tr><td>example</td><td>example</td><td>example</td><td>example</td><td>example</td><td>example</td></tr>
+	<tr><td>example</td><td>example</td><td>example</td><td>example</td><td>example</td><td>example</td></tr>
+</table>
+</center>
+</div>
+</div>
+
+
+<div id="footer_dash"><center><font id="footertext">&copy;copyright 2018 SendIT</font></center></div>
+</body>
+</html>

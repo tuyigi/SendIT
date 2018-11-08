@@ -1,3 +1,6 @@
+/* sign in and sign up pages css */
+
+
 #firstname,#lastname,#email,#phonenumber,#password,#confirmpassword{
     width: 100%;
     padding: 10px 13px;
@@ -10,7 +13,7 @@
 
 #signup {
     width: 100%;
-    background-color: #4D90FE;
+    background-color: #3367D6;
     color: white;
     padding: 10px 15px;
     margin: 8px 0;
@@ -41,11 +44,12 @@
 }
 
 #link{
-    color: #4D90FE;
+    color: #3367D6;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #footer{
@@ -54,8 +58,8 @@
    bottom: 0;
    width: 100%;
    height: 50px;
-   background-color: #E8EAED;
-   color: white;
+   background-color: #D5D5D5;
+   color: #3367D6;
    text-align: center;
   
 }
@@ -67,8 +71,7 @@
    top: 0;
    width: 100%;
    height: 50px;
-   background-color: #4D90FE;
-   color: white;
+   background-color: #3367D6;
    text-align: center;
   
 }
@@ -77,10 +80,254 @@
     margin-top: 10px;
 }
 #footertext{
-    color: #4D90FE;
+    color: #3367D6;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+
+/* user dashboard css */
+
+
+
+
+#dash_header{
+    position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 50px;
+   background-color: #3367D6;
+   color: white;
+}
+
+#footer_dash{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 50px;
+   background-color: #D5D5D5;
+   color: #3367D6;
+
+}
+
+#logo_dash{
+     height: 28px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+#search{
+     width: 400px;
+    padding: 8px 13px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+   
+
+}
+#menu{
+position: fixed;
+   left: 0;
+   top: 50px;
+   width: 280px;
+   height: 100%;
+   background-color: #f2f2f2;
+   color: white;
+}
+
+#menu ul{
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    
+}
+
+#menu ul li a {
+    display: block;
+    color: #000;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#menu ul li a.active {
+    background-color: #424242;
+    color: white;
+}
+
+#menu ul li a:hover:not(.active) {
+    background-color: #4D90FE;
+    color: white;
+}
+#dash_body{
+    top:50px;
+    left:320px;
+    width: 1000px;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+
+
+
+/* top short report on dashboard css*/
+
+
+
+
+#transitP{
+    width: 300px;
+    height: 50px;
+    background-color: #FFDF68;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #EFC700;
+  
+}
+
+#pdelivered{
+    width: 300px;
+    height: 50px;
+    background-color: #8DD35F;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #85B84F;
+    
+
+}
+#totalP{
+  width: 300px;
+    height: 50px;
+    background-color: #80B3FF;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #4C8BF4;
+    
+}
+
+#textreport{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* dashboard recent parcels delivery orders */
+
+
+
+
+
+#recenttitle{
+    color: #3367D6;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+#recentparceldiv{
+    width:100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    height:380px;
+    margin-top: 50px;
+}
+
+#recentlistparcel {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#recentlistparcel th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+#recentlistparcel tr:nth-child(odd){
+    background-color: #80B3FF;
+}
+
+
+#recentlistparcel th {
+    background-color: #4C8BF4;
+    color: white;
+}
+
+
+
+
+/* add parcel page css  */
+
+
+#addparcel{
+    width:400px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    
+    float: left;
+
+
+}
+
+#parcelname,#pickuplocation,#destination,#price{
+   width: 100%;
+    padding: 10px 13px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+#createorder{
+    width: 100%;
+    background-color: #3367D6;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#titlecreateparcel{
+    color: #3367D6;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+ #map{ 
+    width:500px; 
+    height: 400px;
+    margin-top: 20px;
+     }
