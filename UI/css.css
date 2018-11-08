@@ -28,7 +28,7 @@
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 10px;
    
 
 }
@@ -38,7 +38,7 @@
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
    
 
 }
@@ -76,7 +76,8 @@
   
 }
 #logo{
-    height: 28px;
+    width:200px;
+    height: 80px;
     margin-top: 10px;
 }
 #footertext{
@@ -105,6 +106,30 @@
    height: 50px;
    background-color: #3367D6;
    color: white;
+   margin-left: 280px;
+   text-align: center;
+}
+
+#currentprofile{
+    width: 300px;
+    height: 50px
+    float:left;
+    margin-top: 10px;
+    right: 0px;
+    float: right;
+    position: fixed;
+   
+}
+
+#headerusername{
+    color: #fff;
+  font-size: 18px;
+   font-family: arial;
+}
+
+#logoutlink{
+   color: #fff;
+   text-decoration: none;
 }
 
 #footer_dash{
@@ -136,10 +161,17 @@
    
 
 }
+
+#logoplace{
+    background-color:#ffffff;
+    height: 50px; 
+}
+
+
 #menu{
 position: fixed;
    left: 0;
-   top: 50px;
+   top: 0;
    width: 280px;
    height: 100%;
    background-color: #f2f2f2;
@@ -289,7 +321,6 @@ position: fixed;
     border-radius: 5px;
     background-color: #fff;
     padding: 20px;
-    
     float: left;
 
 
@@ -331,3 +362,184 @@ position: fixed;
     height: 400px;
     margin-top: 20px;
      }
+
+
+
+/* parcel details page css */
+
+
+#titledetailsparcel{
+ width: 100%;
+    padding: 1px 13px;
+    margin: 2px 0;
+    display: inline-block;
+     border-radius: 4px;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #3367D6;
+}
+
+#detailsparcel{
+
+ width:400px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    float: right;
+
+}
+
+
+#mapdetail{
+ width:500px; 
+    height: 400px;
+    margin-top: 20px;
+}
+
+#savechanges{
+    width: 49%;
+    background-color: #3367D6;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+#cancel{
+    width: 49%;
+    background-color: #3367D6;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+#labelparcel,#labelprice,#labelpickuplocation,#statusparcel,#distanceparcel{
+width: 100%;
+    padding: 3px 13px;
+    margin: 2px 0;
+    display: inline-block;
+     border-radius: 4px;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left; 
+
+}
+
+
+
+
+
+
+/* profile page css */
+
+
+
+
+
+#allparceldiv{
+    width:100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    height:400px;
+    margin-top: 50px;
+}
+
+
+#alltitle{
+    color: #3367D6;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+
+#alllistparcel {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#alllistparcel th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+#alllistparcel tr:nth-child(odd){
+    background-color: #80B3FF;
+}
+
+
+#alllistparcel th {
+    background-color: #4C8BF4;
+    color: white;
+}
+
+#profile{
+ width:100%;
+ height:400px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  font-family: arial;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+
+#names{
+    color: grey;
+  font-size: 18px;
+  padding: 15px 0px;
+   font-family: arial;
+}
+
+#profileparceldelivered{
+  border: none;
+  padding: 8px 0px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+    background-color: #8DD35F;
+    box-sizing: border-box;
+    border: 1px solid #85B84F;
+
+}
+
+#profileparcelintransit{
+border: none;
+  padding: 8px 0px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  background-color: #FFDF68;
+    box-sizing: border-box;
+    border: 1px solid #EFC700;
+}
+
+
+#profileparceltotal{
+  border: none;
+  padding: 8px 0px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 18px; 
+    background-color: #80B3FF;
+    box-sizing: border-box;
+    border: 1px solid #4C8BF4;
+
+}
