@@ -46,7 +46,6 @@ app.get('/profile.ejs',function(req,res){
 	res.render('profile.ejs');
 });
 
-
-app.listen(3000, function() {
-console.log('Listening on 3000')
+var port    =   process.env.PORT || 8080;
+app.listen(port, function() {
 })
