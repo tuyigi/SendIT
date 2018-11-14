@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive",
+    "test": "mocha",
     "start": "node index.js",
+    "cover": "istanbul cover node_modules/mocha/bin/mocha -- -R spec",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
@@ -23,6 +24,9 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "babel-plugin-transform-async-functions": "^6.22.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.0",
     "coveralls": "^3.0.2",
