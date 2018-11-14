@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ",
+    "test": "mocha --exit",
     "start": "node index.js",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --exit",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
