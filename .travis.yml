@@ -1,8 +1,8 @@
-language: node_js
+language:
+  node_js
+install:
+  - npm install -g codecov
 node_js:
-- "stable"
+  - stable
 after_success:
-- npm run coveralls
-cache:
-  directories:
-    - "node_modules"
+  - npm run codecov
