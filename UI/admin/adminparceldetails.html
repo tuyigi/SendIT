@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Parcel details</title>
-    <link rel="stylesheet" type="text/css" href="./stylesheeets/css.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/css.css">
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Wz9aCJgTVLqPq-HZu_iu5fA6WB3U52Q&callback=initMap">
     </script>
@@ -10,7 +10,7 @@
 <body>
 <div id="dash_header">
 	
-    <div id="currentprofile"><img  src="./images/user.png" width="30px"><font id="headerusername">Admin  <a id="logoutlink" href="" alt="logout">(Logout)</a></font></div>
+    <div id="currentprofile"><img  src="../assets/user.png" width="30px"><font id="headerusername">Admin  <a id="logoutlink" href="" alt="logout">(Logout)</a></font></div>
 
     
     
@@ -19,8 +19,8 @@
 
 <div id="menu">
     <ul>
-        <li ><div id="logoplace"><center><img src="./images/sendit.png" height="50px"></center></div></li>
-		<li><a  href="./admindashbroad.ejs"><b>Home</b></a></li>
+        <li ><div id="logoplace"><center><img src="../assets/sendit.png" height="50px"></center></div></li>
+		<li><a  href="./admindashbroad.html"><b>Home</b></a></li>
 	</ul>
 </div>
 
@@ -52,7 +52,7 @@
    
     <input id="Update" type="submit" value="Update">
   </form>
-  <font><b>NB:Here you can only change your present loaction with this icon <img src="img/presentmarker.png" width="20px" height="20px"> once the parcel’s status is yet to be marked as delivered.</b></font>
+  <font><b>NB:Here you can only change your present loaction with this icon <img src="../assets/presentmarker.png" width="20px" height="20px"> once the parcel’s status is yet to be marked as delivered.</b></font>
 </div></td>
     </tr>
 </table>
@@ -115,7 +115,7 @@ function initMap() {
                 position: centerOfMap,
                 map: map,
                 draggable: true,
-                icon:'img/presentmarker.png' 
+                icon:'../assets/presentmarker.png' 
             });
             
             google.maps.event.addListener(marker3, 'dragend', function(event){
